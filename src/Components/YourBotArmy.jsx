@@ -1,7 +1,7 @@
 import React from 'react'
-import BotCard from "../components/BotCard"
+import BotCard from "../Cards/BotCard"
 
-export default function YourBotArmy(props) {
+function YourBotArmy(props) {
 
   const displayBots = props.bots.map(bot => {
     return <BotCard bot={bot} action={props.action} removeCard={props.removeCard} />
@@ -19,3 +19,4 @@ export default function YourBotArmy(props) {
   )
 
 }
+export default YourBotArmy;
